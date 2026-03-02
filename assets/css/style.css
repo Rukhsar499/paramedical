@@ -34,6 +34,18 @@ h2{
   background-color: #0045AA;
   padding: 60px 0px;
 }
+.tet-box img{
+  margin-bottom: 10px;
+}
+.tet-box{
+  position: relative;
+}
+.pl-dic{
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%);
+}
 .btn-primary{
   background-color: #0045AA;
   color:#fff;
