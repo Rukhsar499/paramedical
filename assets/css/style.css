@@ -136,7 +136,10 @@ h2 {
 
 .course-outline .accordion-button {
   background: linear-gradient(90deg, #5f60f5, #ff6b6b);
-  border-radius: 10px !important;
+  border-radius: 20px !important;
+}
+.accordion-button {
+ border-radius: 20px !important;
 }
 
 .course-outline .accordion-button:not(.collapsed) {
@@ -296,7 +299,7 @@ p,
 .accordion-item {
   margin-bottom: 20px;
   border: none !important;
-  border-radius: 40px;
+  border-radius: 40px !important;
 }
 
 .accordion-button {
@@ -334,10 +337,45 @@ p,
 @media (min-width: 1200px) and (max-width: 1400px) {}
 
 @media screen and (max-width: 767px) {
-
-
+.text-bnne {
+    padding: 34px 20px 0px 20px;
+}
+.blu-box, .pl-txt, .adm-width {
+  width: 100%;
+}
+.c-box1, .c-box{
+  margin-bottom: 20px;
+}
+.placement, .adm-box {
+  background-position: center;
+}
+.adm-box {
+padding: 30px 24px;
+}
+h2 {
+ margin-bottom: 10px;
+}
+.adm-img{
+  display: none;
+}
+.pl-dic {
+    
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h4{
+  font-size: 18px;
+}
+.tet-box {
+  padding: 10px;
+}
+.s-bx img{
+  width: 120px;
+  height: 110px;
+}
   .mb {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
 
