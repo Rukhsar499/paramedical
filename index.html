@@ -138,14 +138,14 @@
   <section class="associates mb">
     <div class="container">
       <h2>Our Associates</h2>
-      <div class="row">
+      <div class="row g-0">
         <div class="col-lg-2 col-md-2 col-6">
           <div class="associates-box b-right">
             <img src="assets/img/associates1.png" alt="iso" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-2 col-md-2 col-6">
-          <div class="associates-box b-right">
+          <div class="associates-box b-right two-right">
             <img src="assets/img/associates2.png" alt="" class="img-fluid">
           </div>
         </div>
@@ -155,7 +155,7 @@
           </div>
         </div>
         <div class="col-lg-2 col-md-2 col-6">
-          <div class="associates-box b-right">
+          <div class="associates-box b-right two-right">
             <img src="assets/img/associates4.png" alt="" class="img-fluid">
           </div>
         </div>
@@ -165,7 +165,7 @@
           </div>
         </div>
         <div class="col-lg-2 col-md-2 col-6">
-          <div class="associates-box">
+          <div class="associates-box skill">
             <img src="assets/img/associates6.png" alt="" class="img-fluid">
           </div>
         </div>
@@ -695,9 +695,10 @@
 
   <section class="about mb">
     <div class="container">
+      <h2 style="text-align: left;" class="d-lg-none d-block">About the Institute</h2>
       <div class="row align-items-center">
-        <div class="col-lg-6 col-md-6 col-12">
-          <h2 style="text-align: left;">About the Institute</h2>
+        <div class="col-lg-6 col-md-6 col-12 order-lg-1 order-md-1 order-2">
+          <h2 style="text-align: left;" class="d-lg-block d-none">About the Institute</h2>
           <p>Established in 1920, the George Telegraph Training Institute (GTTI) recently expanded its offerings with
             the introduction of two new departments: the 'College of Beauty & Wellness' and the 'George Telegraph
             Institute of Healthcare.'The College of Beauty & Wellness features seven diploma courses covering
@@ -717,7 +718,7 @@
             Care Technician.'
           </p>
         </div>
-        <div class="col-lg-6 col-md-6 col-12">
+        <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-md-2 order-1">
           <div class="abt-img">
             <img src="assets/img/abt-img.webp" alt="" class="img-fluid">
           </div>
@@ -913,7 +914,36 @@
     </div>
   </div>
 
+<section class="sticky-icon d-none d-md-block">
+    <div class="icon-box">
+      <a href="https://api.whatsapp.com/send?phone=919836428285"><img src="assets/img/whatsapp.png" alt=""
+          width="25px"></a>
+    </div>
+    <div class="icon-box">
+      <a href="tel:+916292312466"><img src="assets/img/phone.png" alt="" width="28px"></a>
+    </div>
+  </section>
 
+  <!-- <section class="apply">
+    <div class="appli" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      APPLY NOW
+    </div>
+  </section> -->
+
+
+  <!-- phon sticky -->
+  <div class="sticky-footer">
+    <a href="https://api.whatsapp.com/send?phone=919836428285" target="_blank" class="footer-btn whatsapp">
+        <img src="assets/img/whatsapp.png" alt="" width="20px">
+    </a>
+    <div class="appli" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      APPLY NOW
+    </div>
+    <a href="tel:+916292312466" class="footer-btn phone">
+        <img src="assets/img/phone.png" alt="" width="25px">
+    </a>
+</div>
+<!-- phon sticky -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -926,74 +956,8 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-  <script>
-    function switchCard(clickedCard) {
-      const cards = document.querySelectorAll('.solution-card');
-      cards.forEach(card => {
-        card.classList.remove('active');
-      });
-      clickedCard.classList.add('active');
-    }
-  </script>
-
-  <!-- <script>
-  function showSolution(index) {
-    const boxes = document.querySelectorAll('.solution-box');
-    boxes.forEach((box, i) => {
-      if (i === index) {
-        box.classList.add('active');
-      } else {
-        box.classList.remove('active');
-      }
-    });
-  }
-</script> -->
-
-  <script>
-    $(document).ready(function () {
-      const setCalculatedAnimationDuration = ($marqueeGroup, $el) => {
-        if ($marqueeGroup.outerWidth() > $el.outerWidth()) {
-          $marqueeGroup[0].style.animationDuration = "";
-
-          const animationDuration = parseInt(
-            window
-              .getComputedStyle($marqueeGroup[0])
-              .getPropertyValue("animation-duration"),
-            10
-          );
-
-          $el
-            .find(".marquee__group")
-            .css(
-              "animationDuration",
-              `${(
-                ($marqueeGroup.outerWidth() / $el.outerWidth()) *
-                animationDuration
-              ).toFixed(1)}s`
-            );
-        }
-      };
-
-      $(".js-marquee").each((i, el) => {
-        const $el = $(el);
-        const $marqueeGroup = $el.find(".marquee__group");
-        const marqueeItemsCount = $marqueeGroup.children().length;
-
-        while ($marqueeGroup.outerWidth() < $el.outerWidth()) {
-          for (let i = 0; i < marqueeItemsCount; i++) {
-            $marqueeGroup.append($marqueeGroup.children().eq(i).clone());
-          }
-        }
-
-        $el.append($marqueeGroup.clone());
-        $el.addClass("initialized");
-
-        $(window).on("load resize", () => {
-          setCalculatedAnimationDuration($marqueeGroup, $el);
-        });
-      });
-    });
-  </script>
+ 
+  
 
 </body>
 

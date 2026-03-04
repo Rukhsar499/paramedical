@@ -19,7 +19,24 @@ h4 {
   font-family: "Tinos", serif;
   font-weight: 600;
 }
-
+.sticky-footer{
+  display: none;
+}
+.sticky-icon {
+    position: fixed;
+    top: 55%;
+    right: 1%;
+    z-index: 999;
+}
+.icon-box {
+    background: #1b1464;
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.175);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
 h2 {
   text-align: center;
   color: #0045AA;
@@ -376,6 +393,23 @@ h2 {
 .gallery-img2, .gallery-img {
   margin-bottom: 10px;
 }
+.b-right{
+  border-right: 1px solid #00000011;
+  border-bottom: 1px solid #00000011;
+  
+}
+.skill{
+  border-bottom: 1px solid #00000011;
+}
+.two-right{
+  border-right: none;
+}
+.gallery-img img{
+width: 100%;
+}
+.abt-img{
+  margin-bottom: 20px;
+}
 h4{
   font-size: 18px;
 }
@@ -396,35 +430,41 @@ h4{
   }
 
 
-  .call-footer {
-    position: fixed;
-    bottom: 0;
-    width: 95%;
-    background: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    border-radius: 10px;
-    margin: 10px;
-    z-index: 1000;
-  }
-
-  .call-button {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 12px;
-  }
-
-  .call-button .logo {
-    width: 60px;
-    height: 60px;
-  }
+  .footer-btn.phone, .footer-btn.whatsapp {
+        background-color: #0045AA;
+    }
+    .footer-btn {
+        flex: 1;
+        color: #fff;
+        font-size: 17px;
+        text-decoration: none;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition: background-color .3s, transform .2s;
+    }
+      .sticky-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, .2);
+        z-index: 1000;
+        display: flex;
+        justify-content: space-around;
+    }
+  .appli {
+        background: #ffc107;
+        color: #000;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 0px;
+        font-weight: 600;
+    }
 
   .swipe-text {
     font-size: 18px;
